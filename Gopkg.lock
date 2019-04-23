@@ -641,6 +641,17 @@
   revision = "693af58b4d51b8fcc7f9d89576da170765980581"
 
 [[projects]]
+  digest = "1:ded68a73f6dcedbf1b90909e00a28417854bfa8fb3a4ca6f12f11960e151214e"
+  name = "github.com/valyala/fastjson"
+  packages = [
+    ".",
+    "fastfloat",
+  ]
+  pruneopts = ""
+  revision = "73ca3ce4bcd1cb08f60e48df25675b80c6a4e51e"
+  version = "v1.4.1"
+
+[[projects]]
   digest = "1:74f86c458e82e1c4efbab95233e0cf51b7cc02dc03193be9f62cd81224e10401"
   name = "go.uber.org/atomic"
   packages = ["."]
@@ -967,6 +978,7 @@
     "github.com/uber/ringpop-go/swim",
     "github.com/uber/tchannel-go",
     "github.com/urfave/cli",
+    "github.com/valyala/fastjson",
     "go.uber.org/atomic",
     "go.uber.org/cadence",
     "go.uber.org/cadence/.gen/go/cadence/workflowserviceclient",
