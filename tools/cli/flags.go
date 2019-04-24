@@ -99,6 +99,8 @@ const (
 	FlagPrintRawTimeWithAlias       = FlagPrintRawTime + ", prt"
 	FlagPrintDateTime               = "print_datetime"
 	FlagPrintDateTimeWithAlias      = FlagPrintDateTime + ", pdt"
+	FlagPrintJson                   = "print_json"
+	FlagPrintJsonWithAlias          = FlagPrintJson + ", pjson"
 	FlagDescription                 = "description"
 	FlagDescriptionWithAlias        = FlagDescription + ", desc"
 	FlagOwnerEmail                  = "owner_email"
@@ -310,6 +312,10 @@ func getFlagsForListAll() []cli.Flag {
 		},
 		cli.BoolFlag{
 			Name:  FlagPrintFullyDetailWithAlias,
+			Usage: "Print full message without table format",
+		},
+		cli.BoolFlag{
+			Name:  FlagPrintJsonWithAlias,
 			Usage: "Print in raw json format",
 		},
 		cli.StringFlag{
